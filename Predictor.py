@@ -11,8 +11,8 @@ st.set_page_config(
 )
 
 
-st.markdown("<h1 style='text-align: center; color: red;'>Migraine Predictor App</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: black;'>Enter Details Below</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #f84464;'>Migraine Predictor App</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: dodgerblue;'>Enter Details Below</h1>", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 global location , character , nausea ,family_bg , tinnitus , vomit, vertigo, age
 
@@ -96,7 +96,7 @@ try:
     ]
     )
 
-    with open(r"final.pkl", "rb") as f:
+    with open(r"Migraine_predictions/final.pkl", "rb") as f:
         model = pickle.load(f)
 
     pred = model.predict(df.reshape(1, -1))

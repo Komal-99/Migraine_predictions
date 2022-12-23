@@ -25,7 +25,7 @@ with tab1:
             st.write("")
 
         with col2:
-            image1 = Image.open('/images/types_headaches.png')
+            image1 = Image.open('Migraine_predictions/images/types_headaches.png')
             st.image(image1, caption=None,width=700, clamp=False, channels="RGB", output_format="auto")
 
         with col3:
@@ -93,8 +93,8 @@ with tab2:
         st.write("1. Since final prediction is based on the mean predictions from subset trees, it won’t give precise values for the regression model.")
 
     with col2:
-        image = Image.open('/images/migraine-headache.jpeg')
+        image = Image.open('Migraine_predictions/images/migraine-headache.jpeg')
         st.image(image, caption=None, use_column_width='always', clamp=False, channels="RGB", output_format="auto")
 
-        image1= Image.open('/images/rfc.png')
+        image1= Image.open('Migraine_predictions/images/rfc.png')
         st.image(image1, caption=None, use_column_width='always', clamp=False, channels="RGB", output_format="auto")
