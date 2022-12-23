@@ -96,7 +96,7 @@ try:
     ]
     )
 
-    with open(r"Migraine_predictions/final.pkl", "rb") as f:
+    with open(r"../final.pkl", "rb") as f:
         model = pickle.load(f)
 
     pred = model.predict(df.reshape(1, -1))
